@@ -13,6 +13,18 @@
     yearEl.textContent = String(new Date().getFullYear());
   }
 
+  /* ---------- Счётчики на главном экране ---------- */
+  var blocksStat = doc.getElementById("stat-blocks");
+  var sectionsStat = doc.getElementById("stat-sections");
+
+  if (blocksStat) {
+    blocksStat.textContent = String(doc.querySelectorAll(".card").length);
+  }
+
+  if (sectionsStat) {
+    sectionsStat.textContent = String(doc.querySelectorAll('.site-nav a[href^="#"]').length);
+  }
+
   /* ---------- Мобильное меню ---------- */
   var toggle = doc.querySelector(".nav-toggle");
   var nav = doc.getElementById("site-nav");
