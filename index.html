@@ -36,12 +36,18 @@
         <a href="#attack">Атака и защита</a>
         <a href="#rules">Правила</a>
         <a href="#glossary">Словарь</a>
+        <a href="#theory">Теория</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
+      <svg class="hero-ball" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="60" cy="60" r="56" fill="none" stroke="currentColor" stroke-width="4"/>
+        <path d="M22 30c18 10 24 28 21 44M98 30c-18 10-24 28-21 44M34 104c6-18 18-28 42-28"
+              fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      </svg>
       <div class="container hero-inner">
         <p class="eyebrow">Справочник для любителей и новичков</p>
         <h1>Волейбол с нуля:<br>техника, приёмы и правила</h1>
@@ -55,12 +61,12 @@
         </div>
         <dl class="hero-stats">
           <div>
-            <dt>10</dt>
+            <dt id="stat-blocks">10</dt>
             <dd>базовых блоков</dd>
           </div>
           <div>
-            <dt>4</dt>
-            <dd>раздела</dd>
+            <dt id="stat-sections">6</dt>
+            <dd>разделов</dd>
           </div>
           <div>
             <dt>0</dt>
@@ -109,7 +115,7 @@
           </div>
         </div>
 
-        <div class="cards" data-group="basics">
+        <div class="cards cards--2" data-group="basics">
           <article class="card" data-category="basics" data-title="Стойка волейболиста">
             <div class="card-top">
               <span class="badge">Основы</span>
@@ -187,7 +193,7 @@
           </div>
         </div>
 
-        <div class="cards" data-group="skills">
+        <div class="cards cards--4" data-group="skills">
           <article class="card" data-category="skills" data-title="Передача сверху">
             <div class="card-top">
               <span class="badge">Приёмы</span>
@@ -329,7 +335,7 @@
           </div>
         </div>
 
-        <div class="cards" data-group="attack">
+        <div class="cards cards--3" data-group="attack">
           <article class="card" data-category="attack" data-title="Нападающий удар">
             <div class="card-top">
               <span class="badge">Атака</span>
@@ -440,7 +446,7 @@
           </div>
         </div>
 
-        <div class="cards" data-group="rules">
+        <div class="cards cards--1" data-group="rules">
           <article class="card" data-category="rules" data-title="Три касания и ротация">
             <div class="card-top">
               <span class="badge">Правила</span>
@@ -500,6 +506,209 @@
           <div><dt>Двойное касание</dt><dd>Ошибка, когда один игрок касается мяча дважды подряд.</dd></div>
           <div><dt>Заступ</dt><dd>Ошибка при подаче: наступание на лицевую линию или за неё.</dd></div>
         </dl>
+      </div>
+    </section>
+    <section class="section section-alt" id="theory" aria-labelledby="theory-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Раздел 06</p>
+            <h2 id="theory-title">Теория и источники</h2>
+            <p class="section-desc">
+              Всё, что лежит в основе материалов сайта: ключевые цифры правил, история игры,
+              обзор похожих ресурсов и принципы, по которым сделана эта страница. Рядом с каждым
+              блоком — ссылка на источник.
+            </p>
+          </div>
+        </div>
+
+        <dl class="theory-grid">
+          <div class="fact">
+            <dt>Площадка</dt>
+            <dd>18 × 9 м</dd>
+          </div>
+          <div class="fact">
+            <dt>Высота сетки</dt>
+            <dd>2,43 / 2,24 м</dd>
+          </div>
+          <div class="fact">
+            <dt>Игроков на площадке</dt>
+            <dd>6</dd>
+          </div>
+          <div class="fact">
+            <dt>Касаний подряд</dt>
+            <dd>не более 3</dd>
+          </div>
+          <div class="fact">
+            <dt>Партия</dt>
+            <dd>до 25 очков</dd>
+          </div>
+          <div class="fact">
+            <dt>Мяч</dt>
+            <dd>260–280 г</dd>
+          </div>
+        </dl>
+
+        <div class="theory-block">
+          <h3 class="theory-h">Как появился волейбол</h3>
+          <ul class="timeline">
+            <li>
+              <span class="timeline-year">1895</span>
+              Уильям Морган подвесил в зале YMCA теннисную сетку на высоте 198 см — так появилась игра «минтонет», позже получившая название «волейбол».
+            </li>
+            <li>
+              <span class="timeline-year">1897</span>
+              Опубликованы первые правила: площадка 7,6 × 15,1 м, сетка 198 см, мяч массой 340 г, количество игроков не ограничено.
+            </li>
+            <li>
+              <span class="timeline-year">1925</span>
+              Утверждены современные размеры площадки, мяча и сетки; в 1922 году разрешено не более трёх касаний подряд.
+            </li>
+            <li>
+              <span class="timeline-year">1947</span>
+              В Париже прошёл первый конгресс Международной федерации волейбола (FIVB) — 14 стран-основателей.
+            </li>
+            <li>
+              <span class="timeline-year">1964</span>
+              Токио: первые олимпийские соревнования по волейболу.
+            </li>
+            <li>
+              <span class="timeline-year">1998</span>
+              Все партии переведены на систему «ралли-пойнт»: первые четыре — до 25 очков, пятая — до 15.
+            </li>
+          </ul>
+          <a class="source-link" href="https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB" target="_blank" rel="noopener">Источник: обзорная статья «Волейбол» с перечнем первоисточников ↗</a>
+        </div>
+
+        <div class="theory-block">
+          <h3 class="theory-h">Правила, на которые опираются карточки</h3>
+          <table class="compare">
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+                <th scope="col">Где применяется на сайте</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Размер площадки</td>
+                <td>18 × 9 м</td>
+                <td>раздел «Правила»</td>
+              </tr>
+              <tr>
+                <td>Высота сетки</td>
+                <td>2,43 м (мужчины), 2,24 м (женщины)</td>
+                <td>карточка «Блок»</td>
+              </tr>
+              <tr>
+                <td>Мяч</td>
+                <td>окружность 65–67 см, масса 260–280 г</td>
+                <td>карточки «Приём», «Подача»</td>
+              </tr>
+              <tr>
+                <td>Состав команды</td>
+                <td>до 14 игроков в заявке, 6 на площадке, двое — либеро</td>
+                <td>карточка «Либеро», раздел «Правила»</td>
+              </tr>
+              <tr>
+                <td>Зоны и ротация</td>
+                <td>6 зон, после выигранного очка игроки переходят по часовой стрелке</td>
+                <td>карточка «Ротация», раздел «Правила»</td>
+              </tr>
+              <tr>
+                <td>Ход розыгрыша</td>
+                <td>подача из зоны за задней линией, не более 3 касаний подряд</td>
+                <td>карточка «Двойное касание», «Заступ»</td>
+              </tr>
+              <tr>
+                <td>Счёт</td>
+                <td>система «ралли-пойнт», партия до 25 очков, решающая — до 15</td>
+                <td>раздел «Правила»</td>
+              </tr>
+            </tbody>
+          </table>
+          <a class="source-link" href="https://volley.ru/assets/files/pdf/%D0%9E%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0%20%D0%B2%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB%D0%B0%202025-28_%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0.pdf" target="_blank" rel="noopener">Источник: Официальные правила волейбола 2025—2028 (Всероссийская федерация волейбола) ↗</a>
+        </div>
+
+        <div class="theory-block">
+          <h3 class="theory-h">Где брать технику</h3>
+          <p>
+            Подробное описание приёмов, передач и ударов в учебной литературе обычно даётся в
+            терминах, рассчитанных на тренера. В карточках сайта те же элементы переписаны
+            в пошаговую инструкцию для новичка, а в каждой есть блок «Частые ошибки» и
+            рекомендация по безопасности.
+          </p>
+          <ul class="compare" style="list-style: none;">
+            <li><strong>Железняк Ю. Д., Портнов Ю. М.</strong> Спортивные игры: техника, тактика, методика обучения. — М.: Академия, 2004.</li>
+            <li><strong>Беляев А. В., Савин М. В.</strong> Волейбол. — 4-е изд. — М.: ТВТ Дивизион, 2009.</li>
+            <li><strong>Клещёв Ю. Н.</strong> Волейбол. — М.: Физкультура и спорт, 2005.</li>
+            <li><strong>Свиридов В. Л.</strong> Волейбол: энциклопедия. — М.: Человек, Спорт, 2016.</li>
+          </ul>
+        </div>
+
+        <div class="theory-block">
+          <h3 class="theory-h">Похожие ресурсы: чего в них не хватает</h3>
+          <table class="compare">
+            <thead>
+              <tr>
+                <th scope="col">Ресурс</th>
+                <th scope="col">Сильные стороны</th>
+                <th scope="col">Ограничения для новичка</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="https://www.fivb.com/" target="_blank" rel="noopener">FIVB</a> и правила</td>
+                <td>юридически точные формулировки</td>
+                <td>написаны для судей и тренеров, без пошаговых объяснений</td>
+              </tr>
+              <tr>
+                <td><a href="https://en.volleyballworld.com/" target="_blank" rel="noopener">Volleyball World</a></td>
+                <td>видео, интервью, рейтинги</td>
+                <td>только профессиональный спорт, обучающих материалов нет</td>
+              </tr>
+              <tr>
+                <td><a href="https://volley.ru/" target="_blank" rel="noopener">Всероссийская федерация волейбола</a></td>
+                <td>календарь, новости, документы</td>
+                <td>обучающих материалов мало</td>
+              </tr>
+              <tr>
+                <td>Справочная литература</td>
+                <td>системное изложение истории и правил</td>
+                <td>неудобно на площадке, нет интерактивности</td>
+              </tr>
+              <tr>
+                <td>Видео и соцсети</td>
+                <td>наглядность, реальная игровая ситуация</td>
+                <td>нет структуры, непонятно, что смотреть сначала</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="theory-note">
+            <strong>Вывод:</strong> ни один из ресурсов не отвечает на вопрос «с чего начать».
+            Именно поэтому этот сайт объясняет каждый элемент по шагам, показывает типичные ошибки,
+            даёт словарь терминов и работает на телефоне прямо на площадке.
+          </p>
+        </div>
+
+        <div class="theory-block">
+          <h3 class="theory-h">Как сделана эта страница</h3>
+          <p>
+            Сайт написан на HTML, CSS и JavaScript без внешних библиотек и фреймворков: так он
+            открывается даже на медленном интернете, а код остаётся понятным для проверки.
+            Раскрывающиеся карточки сделаны на встроенном элементе <code>details</code>,
+            подсветка активного раздела — на <code>IntersectionObserver</code>, оформление вынесено
+            в CSS-переменные, поэтому палитра меняется в несколько строк. Материалы собирались
+            с помощью ИИ-агента <strong>OpenCode</strong>, при этом каждый факт проверялся по
+            указанным источникам.
+          </p>
+          <ul class="compare" style="list-style: none;">
+            <li><strong>MDN Web Docs</strong> — <a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank" rel="noopener">справочник по HTML, CSS и JavaScript ↗</a></li>
+            <li><strong>WCAG 2 (W3C)</strong> — <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener">требования к доступности веб-страниц ↗</a></li>
+            <li><strong>OpenCode</strong> — <a href="https://opencode.ai/" target="_blank" rel="noopener">открытый ИИ-агент для работы с кодом ↗</a></li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
